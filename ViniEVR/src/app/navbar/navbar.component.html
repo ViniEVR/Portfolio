@@ -1,1 +1,29 @@
-<p>navbar works!</p>
+<div class="sidenav" [ngClass]="collapsed ? 'navbarCollapsed' : ''">
+    <div class="logoContainer">
+        <img src="../assets/Images/logo.png" class="logo" [routerLink]="'home'" alt="Logo - Uma letra V com o estilo e fluídez baseado em A noite estrelada de Van Gogh">
+        <div class="logoText" *ngIf="collapsed">PORTFÓLIO</div>
+        <button class="buttonClose" *ngIf="collapsed" (click)="toggleCollapse()">
+            <i class="bx bx-x"></i>
+        </button>
+    </div>
+    <div class="arrow" (click)="toggleCollapse()">
+      <i *ngIf="!collapsed" class='bx bx-chevron-right'></i>
+      <i *ngIf="collapsed" class='bx bx-chevron-left'></i>
+    </div>
+    <ul class="sidenavItens">
+      <li class="sidenavItem" *ngFor="let data of navData; let i = index">
+        <a class="sidenavLink"
+           [routerLink]="data.routelink" 
+           routerLinkActive="active" 
+           [routerLinkActiveOptions]="{exact: true}"
+           data-bs-toggle="tooltip" 
+           data-bs-placement="right"
+           [title]="data.label"
+           [ngClass]="{'lastItem': data.label === 'Contato'}"
+           (click)="openLink(data)">
+          <i class="sidenavLinkIcon" [class]="data.icon"></i>
+          <span class="sidenavLinkText" *ngIf="collapsed">{{ data.label }}</span>
+        </a>
+      </li>
+    </ul>    
+</div>

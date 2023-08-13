@@ -1,6 +1,20 @@
 @import '../VariablesCSS/_variables'
-body
+
+.body
+    width: calc( 100% - 4rem  )
+    margin-left: 4rem
+    height: 100vh
+    z-index: 0
     color: $cor-suporte
     background-color: $cor-primaria
-    width: 100vw
-    height: 100vh
+    position: relative
+    top: 0
+    transition: all .5s ease
+
+.bodyTrimmed
+    width: calc( 100% - 17rem )
+    margin-left: 17rem
+
+.bodyMdScreen
+    width: calc( 100% - 4rem )
+    margin-left: 4rem

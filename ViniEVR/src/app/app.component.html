@@ -1,3 +1,5 @@
-<router-outlet>
-  <app-body></app-body>
-</router-outlet>
+<app-navbar (onToggleNavbar)="onToggleNavbar($event)"></app-navbar>
+<app-body 
+[collapsed]="isNavbarCollapsed" 
+[screenWidth]="screenWidth">
+</app-body>

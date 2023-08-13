@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-body',
@@ -6,5 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./body.component.sass']
 })
 export class BodyComponent {
+  @Input() collapsed = false;
+  @Input() screenWidth = 0;
 
+  ngOnInit(): void {
+    const collapsedState = localStorage.getItem('menuCollapsed'); 
+  
+    if (collapsedState === 'true') {
+      this.collapsed = true;
+    } else {
+      this.collapsed = false;
+    }
+  }
+  
+  getBodyClass(): string {
+    if (this.collapsed && this.screenWidth > 768) {
+      return 'bodyTrimmed';
+    } else if (this.collapsed && this.screenWidth <= 768 && this.screenWidth > 0) {
+      return 'bodyMdScreen';
+    } else {
+      return '';
+    }
+  }
 }
