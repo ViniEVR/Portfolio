@@ -40,11 +40,12 @@ export class NavbarComponent implements OnInit{
     tooltipTriggerList.forEach(tooltipTriggerEl => {
       new bootstrap.Tooltip(tooltipTriggerEl);
     });
+    this.onToggleNavbar.emit({collapsed: this.collapsed, screenWidth: this.screenWidth});
   }
   
   toggleCollapse(): void {
     this.collapsed = !this.collapsed;
-
+    
     localStorage.setItem('menuCollapsed', this.collapsed.toString());
     this.onToggleNavbar.emit({collapsed: this.collapsed, screenWidth: this.screenWidth})
   }
