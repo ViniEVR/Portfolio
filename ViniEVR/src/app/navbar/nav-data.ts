@@ -6,12 +6,17 @@ export const navbarData = [
     },
     {
         routelink: 'about',
-        icon: 'bx bx-line-chart',
+        icon: 'bx bx-user',
         label: 'Sobre mim'
     },
     {
+        routelink: 'skills',
+        icon: 'bx bx-chip',
+        label: 'Skills'
+    },
+    {
         link: 'https://www.linkedin.com/in/viniciusevr/',
-        icon: 'bx bxl-linkedin',
+        icon: 'bx bx-phone',
         label: 'Contato'
     }
 ]

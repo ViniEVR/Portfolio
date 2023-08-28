@@ -26,7 +26,7 @@ export class NavbarComponent implements OnInit{
     if(this.screenWidth <= 768){
       this.collapsed = false;
     }
-  }
+  } 
 
   ngOnInit(): void {
     this.screenWidth = window.innerWidth;
@@ -50,10 +50,10 @@ export class NavbarComponent implements OnInit{
     this.onToggleNavbar.emit({collapsed: this.collapsed, screenWidth: this.screenWidth})
   }
   
+  
   openLink(data: any): void {
-    if (data.label === 'Contato') {
+    if (data.label === 'Github') {
       window.open(data.link, '_blank');
     }
   }
-  
 }

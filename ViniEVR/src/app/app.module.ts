@@ -7,6 +7,8 @@ import { BodyComponent } from './body/body.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { SkillsComponent } from './skills/skills.component';
+import { TopComponent } from './top/top.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,15 @@ import { HomeComponent } from './home/home.component';
     BodyComponent,
     NavbarComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    SkillsComponent,
+    TopComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
