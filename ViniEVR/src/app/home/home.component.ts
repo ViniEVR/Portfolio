@@ -12,6 +12,20 @@ export class HomeComponent implements OnInit{
 
   ngOnInit(): void {
     this.titleService.setTitle('Home - Vinícius')
+
+    const elementsToHover = document.querySelectorAll('.title, .vertical');
+
+    elementsToHover.forEach((element: Element) => {
+        element.addEventListener('mouseenter', () => {
+            elementsToHover.forEach((el: Element) => el.classList.add('hover-active'));
+        });
+
+        element.addEventListener('mouseleave', () => {
+            elementsToHover.forEach((el: Element) => el.classList.remove('hover-active'));
+        });
+    });
+
   }
+  
 
 }

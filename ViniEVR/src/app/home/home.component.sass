@@ -1,0 +1,64 @@
+@import '../VariablesCSS/_variables'
+    
+.font
+    font-family: 'Courier New', Courier, monospace
+    
+.title-block
+    display: grid
+    grid-template-columns: 2fr 10px
+    gap: 10px
+    justify-content: center
+    justify-items: start
+
+.blinking-element
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    font-size: 6rem
+    font-weight: bolder
+    color: $cor-suporte
+    animation: blink 1.5s infinite
+    margin-top: -5px
+
+.vertical
+    font-size: 4rem
+    margin-top: -2.5rem
+    margin-left: -11px
+    line-height: 100px
+    writing-mode: vertical-lr
+    text-orientation: upright
+    display: inline-block
+    text-align: center
+    transition: 0.5s ease
+
+.title
+    font-size: 8rem
+    transition: 0.5s ease
+
+.hover-active
+    color: $cor-destaque
+
+.title-second-line
+    grid-column: 1 / span 2
+    display: grid
+    grid-template-columns: auto auto
+    align-items: center
+    gap: 5rem
+
+.job
+    font-size: 3rem
+    margin-top: -6.5rem
+    transition: 1s ease
+
+@keyframes blink 
+    0%
+        opacity: 1
+    50%
+        opacity: 0
+    100%
+        opacity: 1
+    
+
+
+    
