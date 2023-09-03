@@ -1,25 +1,11 @@
 @import '../VariablesCSS/_variables'
-    
-.font
-    font-family: 'Courier New', Courier, monospace
-    
+
 .title-block
     display: grid
     grid-template-columns: 2fr 10px
     gap: 10px
     justify-content: center
     justify-items: start
-
-.blinking-element
-    -webkit-user-select: none
-    -moz-user-select: none
-    -ms-user-select: none
-    user-select: none
-    font-size: 6rem
-    font-weight: bolder
-    color: $cor-suporte
-    animation: blink 1.5s infinite
-    margin-top: -5px
 
 .vertical
     font-size: 4rem
@@ -50,15 +36,10 @@
     font-size: 3rem
     margin-top: -6.5rem
     transition: 1s ease
+    &:hover
+        text-decoration: underline
+        text-decoration-color: $cor-destaque
 
-@keyframes blink 
-    0%
-        opacity: 1
-    50%
-        opacity: 0
-    100%
-        opacity: 1
-    
 
 
     

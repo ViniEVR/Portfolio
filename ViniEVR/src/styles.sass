@@ -16,3 +16,28 @@ body
 ::selection
     background-color: $cor-destaque
     color: $cor-primaria
+
+    
+.font
+    font-family: 'Courier New', Courier, monospace
+    
+.blinking-element
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    font-size: 6rem
+    font-weight: bolder
+    color: $cor-suporte
+    animation: blink 1s infinite
+    margin-top: -5px
+
+
+@keyframes blink 
+    0%
+        opacity: 1
+    50%
+        opacity: 0
+    100%
+        opacity: 1
+    

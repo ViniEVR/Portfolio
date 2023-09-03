@@ -1,0 +1,78 @@
+@import '../VariablesCSS/_variables'
+
+body
+    overflow: hidden
+
+.title-block
+    display: flex
+    justify-content: center
+
+.apresentation
+    font-size: 1.5rem
+    
+.highlight-color
+    color: $cor-destaque
+
+.blinking-element
+    font-size: 3.6rem
+
+.content
+    padding-top: 2.5rem
+    text-align: center
+    font-family:courier,arial,helvetica
+
+.title
+    margin-right: 10px
+    font-size: 5rem
+    transition: 0.5s ease
+    &:hover
+        color: $cor-destaque
+
+.section-title
+    font-size: 2.5rem
+    margin-top: 5rem 
+    color: $cor-destaque
+    transition: 0.5s ease
+    &:hover
+        text-decoration: underline
+        text-decoration-color: $cor-suporte
+
+.paragraph
+    font-size: 1.5rem
+    margin-top: 5%
+    width: 45rem
+
+.custom-button
+    margin-top: 10%
+    background: none
+    border: none
+    padding: 0
+    cursor: pointer
+    bottom: 0
+    transition: 0.3 ease
+
+.div-separator
+    margin-bottom: 10%
+
+
+@media (max-width: 768px)
+  .div-separator
+    margin-bottom: 10%
+
+@media (min-width: 769px)
+  .div-separator
+    margin-bottom: 80%
+
+
+
+.icon-bottom
+    bottom: 0
+    font-size: 5rem
+
+.icon-top
+    margin-top: -20rem
+    font-size: 5rem
+
+.second-block
+    padding-top: 50%
+    padding-bottom: 50%

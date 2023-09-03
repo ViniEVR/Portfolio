@@ -1,1 +1,38 @@
-<p>about works!</p>
+<div class="container-fluid">
+    <div class="title-block">
+        <h1 class="font title">SOBRE MIM </h1>
+        <p class="blinking-element">|</p>
+        
+    </div>
+    <p class="apresentation ">Vinícius Vicente <span class="highlight-color">-</span> {{ yearsOld() }} anos <span class="highlight-color">-</span> Desenvolvedor de Software Fullstack</p>
+    
+    <div class="content">
+        <h3 class="section-title font">O Profissional</h3>
+        <p class="paragraph">Tenho mais de um ano de experiência em desenvolvimento de software com foco principalmente em desenvolvimento web fullstack.
+            <br>
+        Minha carreira como desenvolvedor até o momento foi inteiramente dentro de empresas multinacionais e com times multidiciplinares.
+        </p>
+        
+
+        <button class="custom-button" (click)="scrollToBottom()">
+            <i class='bx bx-chevron-down highlight-color icon-bottom'></i>
+        </button>
+        
+        <div class="div-separator"></div>
+        
+        <div class="second-block">
+            <button class="custom-button button-top" (click)="scrollToTop()">
+                <i class='bx bx-chevron-up highlight-color icon-top'></i>
+            </button>
+            <h3 class="section-title font">A pessoa</h3>
+            <p id="aqui" class="paragraph">
+                Sou uma pessoa calma, focada e que gosta de tomar decisões importantes.
+                <br>
+                No meu tempo livre gosto de passar um tempo com a família, assistir séries ou animes e também jogar.
+            </p>
+            <div #bottom></div>
+        </div>
+        
+    </div>
+    
+</div>
