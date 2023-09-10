@@ -1,9 +1,17 @@
-@import '../VariablesCSS/_variables'
 
-body
-    overflow: hidden
+    @import '../VariablesCSS/_variables'
+.content-block
+    margin-top: -35%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    height: 100vh
+
 
 .title-block
+    margin-bottom: 1rem
     display: flex
     justify-content: center
 
@@ -15,9 +23,11 @@ body
 
 .blinking-element
     font-size: 3.6rem
-
+    
 .content
     padding-top: 2.5rem
+    justify-content: center
+    align-items: center
     text-align: center
     font-family:courier,arial,helvetica
 
@@ -72,7 +82,3 @@ body
 .icon-top
     margin-top: -20rem
     font-size: 5rem
-
-.second-block
-    padding-top: 50%
-    padding-bottom: 50%

@@ -1,1 +1,19 @@
-<p>skills works!</p>
+<div class="container-fluid">
+    <div class="title-block">
+        <h1 class="font title">SKILLS</h1>
+        <p class="blinking-element">|</p>  
+    </div>
+
+
+    <div class="cards content-block">
+        <div class="card-skills" *ngFor="let skill of skillsData; let i = index">
+            <h2 class="card-title font">{{ skill.title }}</h2>
+            <ul class="skills">
+                <li class="skill-item" *ngFor="let skillItem of skill.skills; let j = index">
+                    <img class="logo-img" [src]="skillItem.icon" [alt]="skillItem.name">
+                   {{ skillItem.name }}</li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
