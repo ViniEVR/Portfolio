@@ -19,10 +19,6 @@ export class BodyComponent {
       this.collapsed = false;
     }
   }
-
-
-  
-  
   getBodyClass(): string {
     if (this.collapsed && this.screenWidth > 768) {
       return 'bodyTrimmed';

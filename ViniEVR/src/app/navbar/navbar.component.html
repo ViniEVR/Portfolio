@@ -1,7 +1,7 @@
 <div class="sidenav" [ngClass]="collapsed ? 'navbarCollapsed' : ''">
     <div class="logoContainer">
         <img src="../assets/Images/logo.png" class="logo" [routerLink]="'home'" alt="Logo - Uma letra V com o estilo e fluídez baseado em A noite estrelada de Van Gogh">
-        <div class="logoText" *ngIf="collapsed">PORTFÓLIO</div>
+        <div class="logoText" *ngIf="collapsed"><span class="name-style">DEV</span><span class="highlight-color">ini</span></div>
         <button class="buttonClose" *ngIf="collapsed" (click)="toggleCollapse()">
             <i class="bx bx-x"></i>
         </button>

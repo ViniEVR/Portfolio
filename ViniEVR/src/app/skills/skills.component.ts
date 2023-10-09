@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { SkillsData } from './skills-data'; // Importe SkillsDataItem
+import { SkillsData } from './skills-data';
 
 @Component({
   selector: 'app-skills',
@@ -14,5 +14,4 @@ export class SkillsComponent implements OnInit {
   ngOnInit(): void {
     this.titleService.setTitle('Skills - Vinícius');
   }
-
 }

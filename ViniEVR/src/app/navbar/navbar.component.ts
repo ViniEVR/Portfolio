@@ -52,7 +52,7 @@ export class NavbarComponent implements OnInit{
   
   
   openLink(data: any): void {
-    if (data.label === 'Github') {
+    if (data.label === 'Contato') {
       window.open(data.link, '_blank');
     }
   }

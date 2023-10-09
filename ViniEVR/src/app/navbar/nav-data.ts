@@ -15,8 +15,13 @@ export const navbarData = [
         label: 'Skills'
     },
     {
+        routelink: 'projects',
+        icon: 'bx bx-file',
+        label: 'Projetos'
+    },
+    {
         link: 'https://www.linkedin.com/in/viniciusevr/',
-        icon: 'bx bx-phone',
+        icon: 'bx bxl-linkedin',
         label: 'Contato'
     }
 ]

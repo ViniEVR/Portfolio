@@ -24,6 +24,10 @@ export class HomeComponent implements OnInit{
             elementsToHover.forEach((el: Element) => el.classList.remove('hover-active'));
         });
     });
+    document.addEventListener('DOMContentLoaded', function() {
+      document.body.style.overflow = 'hidden';
+    });
+    
 
   }
   
